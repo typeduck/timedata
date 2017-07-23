@@ -5,7 +5,7 @@
   "description": "format for storing time-based data",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha lib/test.js"
+    "test": "./node_modules/.bin/mocha -b lib/test.js"
   },
   "repository": {
     "type": "git",
