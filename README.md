@@ -32,7 +32,11 @@ The first byte is a "split" byte, in which information about the type and length
 are combined into two nibbles:
 
 The first four bits are the Type bits, and they determine the Type of the
-Payload:
+Payload.
+
+The following four bits are the Length bits describing the length of the
+Payload. Because empty payloads are not permitted in this format, the value of
+the Length bits is equal to one **less** than the payload length.
 
 ```text
 0000 (0)  - Timestamp
